@@ -16,6 +16,21 @@ Data processing as described in the paper:
 - [Cell Line](./notebooks/cell_line.ipynb)
 - [Patient Cells](./notebooks/patient_clustering.ipynb)
 
+We heavily rely on Mission Bio's proprietary tools to process the data, this includes their [Tapestri pipeline](https://support.missionbio.com/hc/en-us/categories/360002512933-Tapestri-Pipeline) to go from sequencing reads to a data structure for use with their [Mosaic](https://missionbio.github.io/mosaic/) package. Methods such as filtering cells on completeness and clustering use convenient functions of Mission Bio's data class, for example:
+
+```python
+# Filter cells on completeness (50% or greater)
+sample_obj.dna.filter_barcodes(completeness=50)
+
+# Filter varaints
+sample_obj.dna.filter_variants()
+
+# Find Clones
+sample_obj.dna.find_clones()
+```
+
+When finding clones, in some pateient samples we found that it may be beneficial to run and iterative strategy to increase the quality of the clones. This is implemented this in the `iterative_clone_clustering` function found in the `utils.py` file.
+
 ## Citation
 
 ```bibtex
