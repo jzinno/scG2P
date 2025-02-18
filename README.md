@@ -16,7 +16,7 @@ Data processing as described in the paper:
 - [Cell Line](./notebooks/cell_line.ipynb)
 - [Patient Cells](./notebooks/patient_clustering.ipynb)
 
-We heavily rely on Mission Bio's proprietary tools to process the data, this includes their [Tapestri pipeline](https://support.missionbio.com/hc/en-us/categories/360002512933-Tapestri-Pipeline) to go from sequencing reads to a data structure for use with their [Mosaic](https://missionbio.github.io/mosaic/) package. Methods such as filtering cells on completeness and clustering use convenient functions of Mission Bio's data class, for example:
+We heavily rely on Mission Bio's proprietary tools to process the data, this includes their [Tapestri pipeline](https://support.missionbio.com/hc/en-us/categories/360002512933-Tapestri-Pipeline) to go from sequencing reads to a data structure for use with their [Mosaic](https://missionbio.github.io/mosaic/) package, their API may change over time, this work was done using `Mosaic` version `2.1`, check their documentation for the latest methods if you are working with a different version. Methods such as filtering cells on completeness and clustering use convenient functions of Mission Bio's data class, for example:
 
 ```python
 # Filter cells on completeness (50% or greater)
