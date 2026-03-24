@@ -1,7 +1,7 @@
 # scG2P
 
 Accociated code for the paper [Genotype-to-phenotype mapping of somatic clonal mosaicism via single-cell co-capture of DNA mutations and mRNA transcripts
-](https://www.biorxiv.org/content/10.1101/2024.05.22.595241v1)
+](https://doi.org/10.1158/2159-8290.CD-24-0853)
 
 ![scG2P workflow](./assets/scG2P_workflow.png)
 
@@ -34,12 +34,16 @@ When finding clones, in some pateient samples we found that it may be beneficial
 ## Citation
 
 ```bibtex
-@article {Yuan2024.05.22.595241,
-	author = {Yuan, Dennis J and Zinno, John and Botella, Theo and Dhingra, Dalia and Wang, Shu and Hawkins, Allegra and Swett, Ariel and Sotelo, Jesus and Raviram, Ramya and Hughes, Clayton and Potenski, Catherine and Yokoyama, Akira and Kakiuchi, Nobuyuki and Ogawa, Seishi and Landau, Dan A},
-	title = {Genotype-to-phenotype mapping of somatic clonal mosaicism via single-cell co-capture of DNA mutations and mRNA transcripts},
-	year = {2024},
-	doi = {10.1101/2024.05.22.595241},
-	journal = {bioRxiv}
+@article{10.1158/2159-8290.CD-24-0853,
+    author = {Yuan, Dennis J. and Zinno, John and Botella, Theo and Dhingra, Dalia and Wang, Shu and Hawkins, Allegra G. and Swett, Ariel and Sotelo, Jesus and Raviram, Ramya and Hughes, Clayton and Potenski, Catherine and Godfrey, Katharine D. and Ainsworth, Kara M. and Xu, Shuzhen and Que, Jianwen and Abrams, Julian A. and Yokoyama, Akira and Kakiuchi, Nobuyuki and Ogawa, Seishi and Landau, Dan A.},
+    title = {Genotype-to-Phenotype Mapping of Somatic Clonal Mosaicism via Single-Cell Co-Capture of DNA Mutations and mRNA Transcripts},
+    journal = {Cancer Discovery},
+    pages = {OF1-OF19},
+    year = {2026},
+    month = {02},
+    issn = {2159-8274},
+    doi = {10.1158/2159-8290.CD-24-0853},
+    url = {https://doi.org/10.1158/2159-8290.CD-24-0853},
+    eprint = {https://aacrjournals.org/cancerdiscovery/article-pdf/doi/10.1158/2159-8290.CD-24-0853/3738704/cd-24-0853.pdf},
 }
-
 ```
